@@ -7,8 +7,11 @@ const app = express();
 const port = 3030;
 
 app.use(sessionHandler);
-
-app.use(cors());
+const corsOptions = {
+  optionsSuccessStatus: 200,
+  credentials: true,
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded());
 

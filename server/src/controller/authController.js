@@ -13,8 +13,7 @@ async function login(req, res) {
     req.session.email = fetchUser.email;
     console.log(req.session.email);
     console.log(req.session.id);
-    res.status(200);
-    res.send(fetchUser);
+    res.status(200).json(fetchUser);
   } else {
     res.status(401);
     res.send("error 401");

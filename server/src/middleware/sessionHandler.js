@@ -6,7 +6,8 @@ const sessionHandler = express.Router();
 
 const details = {
   secure: true,
-  saveUnintializedData: true,
+  resave: false,
+  saveUninitialized: true,
   secret: crypto.randomUUID(),
 };
 
