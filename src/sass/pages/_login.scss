@@ -1,0 +1,80 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #D5BDAF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+
+    .login-title{
+        color: #242424;
+        text-align: center;
+        letter-spacing:clamp(0px,.5vw,10px);
+        padding: 1em 0em;
+    }
+
+
+    .login-btn{
+        padding: 1em 2em;
+        color: black;
+        font-size: 1.1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 9999999999px;
+        background-color: rgb(36, 247, 36);
+    }
+
+    .login-email,
+    .login-password{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        width:clamp(20em, 90%, 30em);
+        height: 8em;
+        border-radius: 5em;
+        position: relative;
+        box-shadow: 0px 5px 20px #242424;
+
+        .email-label,
+        .password-label{
+            letter-spacing: 2px;
+            top: 0;
+            position: absolute;
+            font-size: clamp(1rem,6vw,1.7rem);
+            color: #242424 ;
+        }
+
+        .email-input-container,
+        .password-input-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-radius: 99999999999px;
+           width: 80%;
+           height: 40%;
+           background-color: #E3D5CA;
+          
+
+           .email-input,
+        .password-input{
+            text-align: center;
+            color: black;
+            font-size: clamp(.5rem,4vw,1.5rem);
+            width: 90%;
+            height: 80%;
+            border:none;
+            background-color: #E3D5CA;
+
+            &:focus{
+              
+                outline: none;
+            }
+        }
+        }
+    }
+
+}
